@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BAA792F26DB14240075FCEA /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA792E26DB14240075FCEA /* MovieData.swift */; };
+		4BAA793426DB17C80075FCEA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA793326DB17C80075FCEA /* MovieModel.swift */; };
+		4BAA794126DB611E0075FCEA /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA794026DB611E0075FCEA /* SummaryViewController.swift */; };
+		4BAFE7E026DA7145005A31C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE7DF26DA7145005A31C0 /* AppDelegate.swift */; };
+		4BAFE7E226DA7145005A31C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE7E126DA7145005A31C0 /* SceneDelegate.swift */; };
+		4BAFE7E426DA7145005A31C0 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE7E326DA7145005A31C0 /* MovieViewController.swift */; };
+		4BAFE7E726DA7145005A31C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFE7E526DA7145005A31C0 /* Main.storyboard */; };
+		4BAFE7EA26DA7145005A31C0 /* AdeccoPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE7E826DA7145005A31C0 /* AdeccoPlay.xcdatamodeld */; };
+		4BAFE7EC26DA7148005A31C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFE7EB26DA7148005A31C0 /* Assets.xcassets */; };
+		4BAFE7EF26DA7148005A31C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFE7ED26DA7148005A31C0 /* LaunchScreen.storyboard */; };
+		4BAFE7FA26DA7148005A31C0 /* AdeccoPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE7F926DA7148005A31C0 /* AdeccoPlayTests.swift */; };
+		4BAFE80526DA7148005A31C0 /* AdeccoPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE80426DA7148005A31C0 /* AdeccoPlayUITests.swift */; };
+		4BAFE81626DA88F4005A31C0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE81526DA88F4005A31C0 /* CustomCollectionViewCell.swift */; };
+		4BAFE81D26DAFBB9005A31C0 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFE81C26DAFBB9005A31C0 /* MovieManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BAFE7F626DA7148005A31C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFE7D426DA7144005A31C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAFE7DB26DA7145005A31C0;
+			remoteInfo = AdeccoPlay;
+		};
+		4BAFE80126DA7148005A31C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BAFE7D426DA7144005A31C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAFE7DB26DA7145005A31C0;
+			remoteInfo = AdeccoPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BAA792E26DB14240075FCEA /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		4BAA793326DB17C80075FCEA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		4BAA794026DB611E0075FCEA /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		4BAFE7DC26DA7145005A31C0 /* AdeccoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdeccoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFE7DF26DA7145005A31C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BAFE7E126DA7145005A31C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BAFE7E326DA7145005A31C0 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		4BAFE7E626DA7145005A31C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BAFE7E926DA7145005A31C0 /* AdeccoPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdeccoPlay.xcdatamodel; sourceTree = "<group>"; };
+		4BAFE7EB26DA7148005A31C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BAFE7EE26DA7148005A31C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BAFE7F026DA7148005A31C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAFE7F526DA7148005A31C0 /* AdeccoPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdeccoPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFE7F926DA7148005A31C0 /* AdeccoPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdeccoPlayTests.swift; sourceTree = "<group>"; };
+		4BAFE7FB26DA7148005A31C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAFE80026DA7148005A31C0 /* AdeccoPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdeccoPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAFE80426DA7148005A31C0 /* AdeccoPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdeccoPlayUITests.swift; sourceTree = "<group>"; };
+		4BAFE80626DA7148005A31C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAFE81526DA88F4005A31C0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BAFE81C26DAFBB9005A31C0 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BAFE7D926DA7145005A31C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7F226DA7148005A31C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7FD26DA7148005A31C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA5B02D26DB0A9200AE4287 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE7E326DA7145005A31C0 /* MovieViewController.swift */,
+				4BAA794026DB611E0075FCEA /* SummaryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BAFE7D326DA7144005A31C0 = {
+			isa = PBXGroup;
+			children = (
+				4BAFE7DE26DA7145005A31C0 /* AdeccoPlay */,
+				4BAFE7F826DA7148005A31C0 /* AdeccoPlayTests */,
+				4BAFE80326DA7148005A31C0 /* AdeccoPlayUITests */,
+				4BAFE7DD26DA7145005A31C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BAFE7DD26DA7145005A31C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE7DC26DA7145005A31C0 /* AdeccoPlay.app */,
+				4BAFE7F526DA7148005A31C0 /* AdeccoPlayTests.xctest */,
+				4BAFE80026DA7148005A31C0 /* AdeccoPlayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BAFE7DE26DA7145005A31C0 /* AdeccoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5B02D26DB0A9200AE4287 /* Controller */,
+				4BAFE82126DAFBC1005A31C0 /* View */,
+				4BAFE81B26DAFB9A005A31C0 /* Model */,
+				4BAFE7DF26DA7145005A31C0 /* AppDelegate.swift */,
+				4BAFE7E126DA7145005A31C0 /* SceneDelegate.swift */,
+				4BAFE7EB26DA7148005A31C0 /* Assets.xcassets */,
+				4BAFE7ED26DA7148005A31C0 /* LaunchScreen.storyboard */,
+				4BAFE7F026DA7148005A31C0 /* Info.plist */,
+				4BAFE7E826DA7145005A31C0 /* AdeccoPlay.xcdatamodeld */,
+				4BAFE81526DA88F4005A31C0 /* CustomCollectionViewCell.swift */,
+			);
+			path = AdeccoPlay;
+			sourceTree = "<group>";
+		};
+		4BAFE7F826DA7148005A31C0 /* AdeccoPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE7F926DA7148005A31C0 /* AdeccoPlayTests.swift */,
+				4BAFE7FB26DA7148005A31C0 /* Info.plist */,
+			);
+			path = AdeccoPlayTests;
+			sourceTree = "<group>";
+		};
+		4BAFE80326DA7148005A31C0 /* AdeccoPlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE80426DA7148005A31C0 /* AdeccoPlayUITests.swift */,
+				4BAFE80626DA7148005A31C0 /* Info.plist */,
+			);
+			path = AdeccoPlayUITests;
+			sourceTree = "<group>";
+		};
+		4BAFE81B26DAFB9A005A31C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE81C26DAFBB9005A31C0 /* MovieManager.swift */,
+				4BAA792E26DB14240075FCEA /* MovieData.swift */,
+				4BAA793326DB17C80075FCEA /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BAFE82126DAFBC1005A31C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFE7E526DA7145005A31C0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BAFE7DB26DA7145005A31C0 /* AdeccoPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFE80926DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlay" */;
+			buildPhases = (
+				4BAFE7D826DA7145005A31C0 /* Sources */,
+				4BAFE7D926DA7145005A31C0 /* Frameworks */,
+				4BAFE7DA26DA7145005A31C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdeccoPlay;
+			productName = AdeccoPlay;
+			productReference = 4BAFE7DC26DA7145005A31C0 /* AdeccoPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BAFE7F426DA7148005A31C0 /* AdeccoPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFE80C26DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlayTests" */;
+			buildPhases = (
+				4BAFE7F126DA7148005A31C0 /* Sources */,
+				4BAFE7F226DA7148005A31C0 /* Frameworks */,
+				4BAFE7F326DA7148005A31C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BAFE7F726DA7148005A31C0 /* PBXTargetDependency */,
+			);
+			name = AdeccoPlayTests;
+			productName = AdeccoPlayTests;
+			productReference = 4BAFE7F526DA7148005A31C0 /* AdeccoPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BAFE7FF26DA7148005A31C0 /* AdeccoPlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAFE80F26DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlayUITests" */;
+			buildPhases = (
+				4BAFE7FC26DA7148005A31C0 /* Sources */,
+				4BAFE7FD26DA7148005A31C0 /* Frameworks */,
+				4BAFE7FE26DA7148005A31C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BAFE80226DA7148005A31C0 /* PBXTargetDependency */,
+			);
+			name = AdeccoPlayUITests;
+			productName = AdeccoPlayUITests;
+			productReference = 4BAFE80026DA7148005A31C0 /* AdeccoPlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BAFE7D426DA7144005A31C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4BAFE7DB26DA7145005A31C0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4BAFE7F426DA7148005A31C0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4BAFE7DB26DA7145005A31C0;
+					};
+					4BAFE7FF26DA7148005A31C0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4BAFE7DB26DA7145005A31C0;
+					};
+				};
+			};
+			buildConfigurationList = 4BAFE7D726DA7144005A31C0 /* Build configuration list for PBXProject "AdeccoPlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BAFE7D326DA7144005A31C0;
+			productRefGroup = 4BAFE7DD26DA7145005A31C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BAFE7DB26DA7145005A31C0 /* AdeccoPlay */,
+				4BAFE7F426DA7148005A31C0 /* AdeccoPlayTests */,
+				4BAFE7FF26DA7148005A31C0 /* AdeccoPlayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BAFE7DA26DA7145005A31C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFE7EF26DA7148005A31C0 /* LaunchScreen.storyboard in Resources */,
+				4BAFE7EC26DA7148005A31C0 /* Assets.xcassets in Resources */,
+				4BAFE7E726DA7145005A31C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7F326DA7148005A31C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7FE26DA7148005A31C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BAFE7D826DA7145005A31C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFE7EA26DA7145005A31C0 /* AdeccoPlay.xcdatamodeld in Sources */,
+				4BAFE81626DA88F4005A31C0 /* CustomCollectionViewCell.swift in Sources */,
+				4BAFE7E426DA7145005A31C0 /* MovieViewController.swift in Sources */,
+				4BAA792F26DB14240075FCEA /* MovieData.swift in Sources */,
+				4BAA793426DB17C80075FCEA /* MovieModel.swift in Sources */,
+				4BAFE7E026DA7145005A31C0 /* AppDelegate.swift in Sources */,
+				4BAFE81D26DAFBB9005A31C0 /* MovieManager.swift in Sources */,
+				4BAFE7E226DA7145005A31C0 /* SceneDelegate.swift in Sources */,
+				4BAA794126DB611E0075FCEA /* SummaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7F126DA7148005A31C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFE7FA26DA7148005A31C0 /* AdeccoPlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAFE7FC26DA7148005A31C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAFE80526DA7148005A31C0 /* AdeccoPlayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BAFE7F726DA7148005A31C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAFE7DB26DA7145005A31C0 /* AdeccoPlay */;
+			targetProxy = 4BAFE7F626DA7148005A31C0 /* PBXContainerItemProxy */;
+		};
+		4BAFE80226DA7148005A31C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAFE7DB26DA7145005A31C0 /* AdeccoPlay */;
+			targetProxy = 4BAFE80126DA7148005A31C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BAFE7E526DA7145005A31C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAFE7E626DA7145005A31C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BAFE7ED26DA7148005A31C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAFE7EE26DA7148005A31C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BAFE80726DA7148005A31C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BAFE80826DA7148005A31C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BAFE80A26DA7148005A31C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4BAFE80B26DA7148005A31C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4BAFE80D26DA7148005A31C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdeccoPlay.app/AdeccoPlay";
+			};
+			name = Debug;
+		};
+		4BAFE80E26DA7148005A31C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdeccoPlay.app/AdeccoPlay";
+			};
+			name = Release;
+		};
+		4BAFE81026DA7148005A31C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdeccoPlay;
+			};
+			name = Debug;
+		};
+		4BAFE81126DA7148005A31C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2WTJYBFZC;
+				INFOPLIST_FILE = AdeccoPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camilomoreno.AdeccoPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdeccoPlay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BAFE7D726DA7144005A31C0 /* Build configuration list for PBXProject "AdeccoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFE80726DA7148005A31C0 /* Debug */,
+				4BAFE80826DA7148005A31C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFE80926DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFE80A26DA7148005A31C0 /* Debug */,
+				4BAFE80B26DA7148005A31C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFE80C26DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFE80D26DA7148005A31C0 /* Debug */,
+				4BAFE80E26DA7148005A31C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAFE80F26DA7148005A31C0 /* Build configuration list for PBXNativeTarget "AdeccoPlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAFE81026DA7148005A31C0 /* Debug */,
+				4BAFE81126DA7148005A31C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4BAFE7E826DA7145005A31C0 /* AdeccoPlay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BAFE7E926DA7145005A31C0 /* AdeccoPlay.xcdatamodel */,
+			);
+			currentVersion = 4BAFE7E926DA7145005A31C0 /* AdeccoPlay.xcdatamodel */;
+			path = AdeccoPlay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4BAFE7D426DA7144005A31C0 /* Project object */;
+}
